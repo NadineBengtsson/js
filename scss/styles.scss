@@ -1,0 +1,24 @@
+
+.banner {
+    display: flex;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+
+    .li {
+        list-style: none;
+    };
+
+    a {
+        text-decoration: none;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    button {
+        color: aqua;
+        padding: 20px;
+    }
+}

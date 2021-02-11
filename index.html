@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> LicitAr </title>
+
+        <meta charset="utf-8">
+        <meta name="title" content="LicitAr">
+        <meta name="description" content="facilitando el seguimiento y cumplimiento de licitaciones en tu empresa">
+        <meta name="author" content="Nadine Bengtsson" >
+        <meta name="keywords" content="Licitaciones, ofertas, licitación, licitacion, concurso, oferta">
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--Version 0.1 // https://####.com/ // Enero 2021
+        
+        <----------------------------------- FAV ICON----------------------------------------------------------------------------->
+        <link rel="shortcut icon" href="#">
+        <link rel="icon" href="#">
+
+        <!----------------------------------- Analytics Script-------------------------------------------------------------------->
+      
+
+        <!------------------------------------ METATAGS - social media--------------------------------------------------------------->       
+        <!-- Open Graph - Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:title" content="LicitAr">
+        <meta property="og:description" content="facilitando el seguimiento y cumplimiento de licitaciones en tu empresa">
+        <meta property="og:image" content="#">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="">
+        <meta property="twitter:url" content="">
+        <meta property="twitter:title" content="LicitAr">
+        <meta property="twitter:description" content="facilitando el seguimiento y cumplimiento de licitaciones en tu empresa">
+        <meta property="twitter:image" content="">
+
+        <link rel="stylesheet" href="scss/styles.scss" />
+
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <img src="#" alt="logo" />
+                        <a href="index.html">Inicio</a>
+                        <a href="#">Sobre LicitAr</a>
+                        <a href="#">Dar Feedback</a>
+                        <a href="#">Contacto</a>
+                        <a href="#">Nuestros Proveedores</a>
+                        <a href="#"></a>
+                        <button>
+                            <a href="#">Ingresar</a>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="banner">
+                <h2>LicitAr</h2> 
+                <p>Verificá el cumplimiento y seguimiento de las licitaciones y ofertas de tu empresa</p>
+            </div>
+        </section>
+
+        <!--scrap and ai
+        <section class="card">
+            <div>Nuevas Licitaciones Publicas publicadas</div>
+            <div>Balance de licitaciones</div>
+            <div>Informe de gestion</div>
+            <div>Predictive Analytics de ganar o no basada en antecedentes  e insights</div>
+            <div>Checklist de licitaciones</div>
+            <div>Registro de Incumplimientos</div>
+            <div>Registro de Proveedores vigentes</div>
+            <div>Registro de Polizas</div>
+            <div>Analisis partners</div>
+            <div> Registro de Proveedores usados </div>
+            <div> Analisis proveedores </div>
+            <div> Analisis competitivo</div>
+            <div> Connect sharepoint</div>
+            <div> alertas pliego vs. oferta</div>
+        </section>
+
+        <section>     
+            <div class="card">
+                <h3>Nuevo Registro como Proveedor</h3>
+                    <form>
+                      <label for="registro">Nombre del Registro</label>
+                      <input type="text" id="registro" name="" placeholder="" value="Ingrese nombre del registro"/>
+                      
+                      <label for="ente"> Nombre del Organismo</label>
+                      <input type="text" id="ente" name="" placeholder="" value="Ingrese el organismo"/>
+
+                      <label for="fechaderegistro">Fecha de solicitud de registro</label>
+                      <input type="date" id="fechaderegistro" name="" placeholder="" value="Ingrese fecha de solicitud de registro" />
+
+                      <label for="fechadealta">Fecha de alta</label>
+                      <input type="date" id="fechadealta" name="" placeholder="" value="Ingrese fecha de alta en el registro"/>
+
+                      <label for="vigencia">Vigencia del registro</label>
+                      <input type="date" id="vigencia" name="" placeholder="" value="¿Hasta cuando estara vigente el registro?" / >
+
+                      <label for="upload">Subir documentación</label>
+
+                      <button>Ingresar</button>
+                    </form> -->
+
+                <h3>Nueva Licitación</h3>
+                    <form>
+                        <label for="ente"> Nombre del Organismo</label>
+                        <input type="text" id="ente" name="" placeholder="" value="Ingrese el organismo"/>
+                        
+                        <label for="year">Año</label>
+                        <input type="date" id="year" name="" placeholder="" value="Ingrese el año de la licitación"/>
+
+                        <label for="numero">Número de Licitación</label>
+                        <input type="number" id="numero" name="" placeholder="" value="Ingrese el número de la licitación"/>
+
+                        <label for="tipo">Tipo de Licitación</label>
+                        <select id="numero" value="Seleccione modalidad de contratación">
+                            <option></option>
+                        </select>
+
+                        <label for="tipo">Partner</label>
+                        <select id="partner" value="Seleccione Partner">
+                            <option>Cisco</option>
+                            <option>Oracle</option>
+                            <option type="input">Otro</option>
+                        </select>
+
+                        <label for="PO">Presupuesto</label>
+                        <input type="number" id="presupuesto" name="" placeholder="" value="Ingrese el presupuesto"/>
+
+                        <label for="CP">Compra</label>
+                        <input type="number" id="valor-pliego" name="" placeholder="" value="Ingrese el valor del pliego"/>
+
+                        <label for="caucion">Garantia</label>
+                        <input type="number" id="poliza" name="" placeholder="" value="Ingrese el porcentaje de la poliza"/>
+
+                        <label for="anticipo">Anticipo</label>
+                        <input type="number" id="anticipo" name="" placeholder="" value="Ingrese el porcentaje de anticipo"/>
+
+                        <label for="upload">Subir pliegos</label>
+
+                        <button>Ingresar</button>
+                    </form> <!--
+
+                <h3>Nueva Oferta</h3>
+                    <form>
+                        
+                        <label for="licitación"> Licitación</label>
+                        <select name="" id="licitaciones">
+                            <option>Licitacion 1</option>
+                            <option>Licitacion 2</option>
+                        </select> --> 
+                        <!--<SearchComponent />
+
+                        <label for="oferente">Oferente</label>
+                        <select name="" id="oferentes">
+                            <option> Systemnet S.A. </option>
+                            <option> Systement Inc. </option>
+                            <option> OCP TECH Colombia </option>
+                            <option> OCP TECH Panama </option>
+                            <option> Software del Centro </option>
+                            <option> Otro </option>
+                        </select>
+                        
+                        <label for="anticipo1">Anticipo total</label>
+                        <input type="checkbox" id="anticipo-ok" name="" placeholder="" value="Van a ir por el anticipo total">
+
+                        <label for="anticipo2">Anticipo parcial</label>
+                        <input type="checkbox" id="anticipo-parte" name="" placeholder="" value="Van a ir por parte del anticipo">
+                        
+                        <label for="anticipo-parte1">Que porcentaje?</label>
+                        <input type="number" id="anticipo-parte1" name="" placeholder="" value="Ingrese porcentaje del anticipo">
+                        
+                        <label for="precio">Oferta principal</label>
+                        <input type="number" id="oferta-1" name="" placeholder="" value="Ingrese el precio de la oferta principal"/>
+
+                        <label for="oferta-2">Se presentaron ofertas alternativas</label>
+                        <input type="checkbox" id="oferta-2" name="oferta-2" placeholder="" value="Si"/>
+
+                        <label for="sin-oferta-2">No se presentaron ofertas alternativas</label>
+                        <input type="checkbox" id="sin-oferta-2" name="sin-oferta-2" placeholder="" value="No"/>
+
+                        <label for="precio">Precio</label>
+                        <input type="number" id="precio" name="" placeholder="" value="Ingrese el precio"/>
+
+                        <label for="upload">Subir Oferta/s</label>
+                        <button>Ingresar</button>
+                    </form>
+
+                    Extraer datos de prefrencias COMPRE ARGENTINO, COMPRE MARDELPLATA, etc para el insight
+
+                <h3>Nueva Orden de Compra</h3>
+                    <form>
+                        
+                        <label for="licitación"> Licitación</label>
+                        <select name="" id="licitaciones">
+                            <option>Licitacion 1</option>
+                            <option>Licitacion 2</option>
+                        </select>
+                        <SearchComponent />
+
+                        <h4>¿No esta la licitación que buscas?</h4>
+                        <button>Pedí que suban licitación</button>
+
+                        <label for="year">Año</label>
+                        <input type="date" id="year" name="" placeholder="" value="Ingrese el año de la licitación"/>
+
+                        <label for="numero">Número de la Orden de Compra</label>
+                        <input type="number" id="numeroOrden" name="" placeholder="" value="Ingrese el número de la orden"/>
+
+                        <label for="r-adjudicados1">Se adjudicaron todos los renglones</label>
+                        <input type="checkbox" id="r-adjudicados1" name="r-adjudicados1" placeholder="" value="Si"/>
+
+                        <label for="r-adjudicados2">No se adjudicaron todos los renglones</label>
+                        <input type="checkbox" id="r-adjudicados2" name="r-adjudicados2" placeholder="" value="No"/>
+
+                        <label for="upload">Subir Orden de Compra</label>
+
+                        <button>Ingresar</button>
+                    </form>
+                    
+                <h3>Nueva Factura</h3>
+                    <form>
+                        <label for="licitación"> Licitación</label>
+                        <select name="" id="licitaciones">
+                            <option>Licitacion 1</option>
+                            <option>Licitacion 2</option>
+                        </select>
+                      <SearchComponent />
+
+                        <h4>¿No esta la licitación que buscas?</h4>
+                        <button>Pedí que suban licitación</button>
+
+                        <label for="OC"> Orden de Compra</label>
+                        <select name="" id="OC">
+                            <option>Orden de Compra 1</option>
+                            <option>Orden de Compra 2</option>
+                        </select>
+                        <SearchComponent />
+                        <h4>¿No esta la orden de compra que buscas?</h4>
+                        <button>Pedí que suban la orden</button>
+
+                        <label for="upload">Subir Orden de Compra</label>
+
+                        <button>Ingresar</button>
+                    </form>
+
+                <h3>Informar o actualizar estado de una licitación</h3>
+                    <form> transformar con ifs
+                        <label for="licitación"> Licitación</label>
+                        <select name="" id="licitaciones">
+                            <option>Licitacion 1</option>
+                            <option>Licitacion 2</option>
+                        </select>
+                        <SearchComponent />
+
+                        <h4>¿No esta la licitación que buscas?</h4>
+                        <button>Pedí que suban licitación</button>
+
+                        <label for="OC"> Orden de Compra</label>
+                        <select name="" id="OC">
+                            <option>Orden de Compra 1</option>
+                            <option>Orden de Compra 2</option>
+                        </select>
+                        <SearchComponent />
+                        <h4>¿No esta la orden de compra que buscas?</h4>
+                        <button>Pedí que suban la orden</button>
+
+                        <label for="factura"> Factura</label>
+                        <select name="" id="factura">
+                            <option>Factura 1</option>
+                            <option>Factura 2</option>
+                        </select>
+                        <SearchComponent />
+                        <h4>¿No esta la factura que buscas?</h4>
+                        <button>Pedí que suban la factura</button>
+                       
+                        <label for="status1">Se dio de baja</label>
+                        <input text="checkbox" id="status1" name="" placeholder="" value="Se dio de baja">
+                       
+                        <label for="status2">Se perdio</label>
+                        <input text="checkbox" id="status2" name="" placeholder="" value="Se perdio">
+
+                        <label for="status3">Se desestimo</label>
+                        <input text="checkbox" id="status3" name="" placeholder="" value="Se desestimo">
+
+                        <label for="status4">La cancelaron</label>
+                        <input text="checkbox" id="status4" name="" placeholder="" value="La cancelaron">
+
+                        <label for="status5">Nueva fecha apertura</label>
+                        <input text="checkbox" id="status5" name="" placeholder="" value="Nueva fecha de apertura">
+                        <input text="date" id="nueva-fecha-apertura" name="" placeholder="" value="ingrese nueva fecha"
+
+                        <label for="status6">Cambio el precio</label>
+                        <input text="checkbox" id="status6" name="" placeholder="" value="Cambio el precio"> if
+                        <input text="number" id="nuevo-precio" name="" placeholder="" value="Ingrese nuevo precio">
+                        
+                        <label for="status7">Devolucion Garantia</label>
+                        <input text="checkbox" id="status7" name="" placeholder="" value="Se devolvio la garantia">
+
+                        <label for="update">¿querés subir algún documento?</label>
+
+                        <button id="update">Actualizar</button>
+                    </form>
+
+            </div>
+        </section> --> 
+
+        <section id="search">
+            <div>
+                <h3>Busca información por Licitación</h3>
+                <!--<SearchComponent /> buscar por numero, ano y organismo filtros-->
+                <div> 
+                    <h3>¿No encontras una licitación, orden de compra o factura?</h3>
+                    <button>Pedí más información</button>
+                </div>
+
+                <button>Filtra por año</button>
+                <button>Filtra por organismo</button>
+                <button>Filtra por oferente</button>
+                <button>Filtra por pais</button>
+
+            </div>
+        </section>
+
+        <section>
+            <button>Dar feedback</button>
+        </section>
+
+        <footer><!--<FooterComponent/>--></footer> 
+
+    </body>
+
+    <script src="main.js"></script>
+
+</html>
