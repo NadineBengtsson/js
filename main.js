@@ -39,8 +39,8 @@ function nuevaLicitacion(){
         new pliego = (nuevoNumero, nuevoOrganismo, options.name = "estado inicial") 
 )};
 
-const verEstado = options.find(status => status === "estado inicial"); 
-const verEstado2 = options.filter(status => status.includes("avanzado"));
+const searchEstado = options.find(status => status === "estado inicial"); 
+const filterEstado2 = options.filter(status => status.includes("avanzado"));
 
 const VerificarEstado=() => {
     if (licitacion == "") {
