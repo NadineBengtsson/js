@@ -11,6 +11,14 @@ let organismo=[
     {id:"organismo4", 
     name: "ARSAT"}];
 
+let estados= [
+        {id:"status1", 
+        name: "estado inicial"},
+        {id:"status2", 
+        name: "avanzado"},
+        {id: "status3", 
+        name:"demorado"}]; 
+    
 function licitacion(){
   this.numero = numeros;
   this.organismo = organismos;
@@ -18,36 +26,31 @@ function licitacion(){
 };
 
 console.log(licitacion);
-let options= [
-    {id:"status1", 
-    name: "estado inicial"},
-    {id:"status2", 
-    name: "avanzado"},
-    {id: "status3", 
-    name:"demorado"}]; 
 
-function Estados(){
+function Estado(){
         this.name = estado;
         this.id = id;
 };
-const nuevoStatus = new Estados(estado="finalizado", id="status4");
+const nuevoStatus = new Estado(estado="finalizado", id="status4");
 
 function nuevaLicitacion(){
     let nuevoNumero= prompt("Ingresar numero de licitacion");
     let nuevoOrganismo =prompt("Ingresar numero de licitacion");
-    return (
-        new pliego = (nuevoNumero, nuevoOrganismo, options.name = "estado inicial") 
+    return (new pliego (nuevoNumero, nuevoOrganismo, options.name = "estado inicial") 
 )};
 
-const searchEstado = options.find(status => status === "estado inicial"); 
-const filterEstado2 = options.filter(status => status.includes("avanzado"));
+const searchEstado = estados.find(status => status === "estado inicial"); 
 
 const VerificarEstado=() => {
     if (licitacion == "") {
         console.log("no se ingreso")
     } else {}};
 
-
+for (const licitacion of organismo) {
+    let contendor = document.createElement('div');
+    contendor.innerHTML = licitacion
+    nuevaLicitacion.appendChild(div);
+}
 
 
 
